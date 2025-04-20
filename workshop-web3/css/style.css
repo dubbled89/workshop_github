@@ -1,0 +1,119 @@
+/* nav */
+
+.main-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
+.navbar {
+    width: 100%;
+    position: relative;
+
+}
+
+.logo-nav {
+    width: 300px;
+    color: white;
+}
+
+
+.navbar-menu {
+    float: right;
+    padding: 30px;
+}
+
+.navbar-menu li {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 30px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-menu {
+    width: 80px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    /* display: none; */
+}
+/* Slider */
+.tinyslide figure figcaption {
+    position: absolute;
+    bottom: 100px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+/* info-car */
+body,html {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.info-car {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.info-car h1{
+    background-color: black;
+    color: white;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.info-car img {
+    width: 49%;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .navbar-menu {
+        position: absolute;
+        right: -270px;
+        top: 100px;
+        background-color: black;
+        transition: 2s;
+        opacity: 15;
+    }
+    .navbar-menu li{
+        display: block;
+        line-height: 2.5;
+    }
+    .logo-menu{
+        display: block;
+    }
+    .navbar:hover .navbar-menu {
+        right: 0px;
+    }
+    .info-car img {
+        width: 50%;
+        margin-top: 20px;
+    }
+    /* body {
+        overflow: hidden;
+    } */
+    footer {
+        text-align: center;
+    }
+}
