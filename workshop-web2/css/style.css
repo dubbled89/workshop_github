@@ -1,0 +1,138 @@
+
+/* body html */
+.chakra-petch-bold {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+body,html {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* nav */
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    float: left;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* article vitamin */
+section {
+    width: 960px;
+    margin: 0 auto;
+}
+
+article {
+    text-align: center;
+}
+
+article h1 {
+    background-color: orange;
+    padding: 20px;
+}
+
+.youtube video {
+    width: 960px;
+}
+
+/* .vitamin-inner */
+.vitamin {
+    width: 960px;
+    height: 250px;
+}
+
+.vitamin-inner {
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+
+.vitamin-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.vitamin-inner a {
+    color: black;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 8px;
+}
+
+.vitamin-inner img:hover {
+    background-color: gray;
+    opacity: 0.5;
+}
+
+/* blog */
+.blog {
+    width: 960px;
+}
+
+.img-blog {
+    width: 100%;
+}
+
+.img-blog img {
+    width: 100%;
+}
+
+.info-blog {
+   text-align: left;
+}
+
+.info-blog h1 {
+    text-align: center;
+    background-color: orange;
+    color: white;
+    padding: 10px auto;
+}
+
+
+
+/* contact */
+section address {
+    text-align: center;
+}
+
+.map {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+/* footer */
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
