@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header {
+    background-color: gray;
+    text-align: center;
+    color: white;
+    height: 100px;
+}
+header h1 {
+    margin: 0px;
+    line-height: 3;
+}
+
+/* section */
+section {
+    width: 100%;
+}
+/* nav */
+nav {
+    width: 25%;
+    height: 500px;
+    background-color: lightgrey;
+    padding-left: 2%;
+    padding-top: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+/* article */
+article{
+    width: 75%;
+    float: right;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    background-color: gray;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+footer p{
+    margin-top: 0;
+}
+
+
+/* div class clear */
+.clear {
+    clear: both;
+}
+
+

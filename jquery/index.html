@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.7.1.slim.min.js.js"></script>
+    <title>JQUERY EFFECT</title>
+</head>
+<br>
+    <div><a>JavaScript</a></div>
+    <hr>
+    <button id="btnclick">Click</button></br>
+    <h1>ตัวอักษรจะเปลี่ยนสี</h1>
+    <hr>
+
+    <!-- mouse enter & mouse leave-->
+    <h1 id="m-enter"> ตัวอักษรที่จะเปลี่ยสีเมื่อ mouse enter & leave </h1>
+
+    <!-- mouse down & mouse up -->
+    <button id="btnmouse-down-up">Click</button>
+    <h1 id="text3">ตัวอักษรจะเปลี่ยนไป</h1>
+
+    <!-- mouse hover
+    <h1 id="text4">ตัวอักษรที่จะเปลี่ยนสี</h1>
+    <hr> -->
+    
+    <!-- hide show and toggle -->
+    <button id="show">Show</button>    
+    <button id="hide">HIDE</button>
+    <button id="toggle">TOGGLE</button>
+    <h1 id="text5">ข้อความ</h1>
+    <hr>
+
+    <!-- Slide up & down
+    <button id="btnup">Slide up</button>
+    <button id="btndw">Slide Down</button>
+    <button id="btntg">Slide Toggle</button>
+    <h1 id="n1"> Message Toggle Bar </h1> -->
+
+    <button id="btnleft">BTN LEFT</button>
+    <button id="btnright">BTN RIGHT</button>
+    <button id="btntog">BTN TOGGLE</button>
+    <h3 id="text7">TEXT MOVE</h3>
+    
+    <br><br><br><br><br><hr>
+
+    <!-- filter data-->
+    <input type="text" id="myInput" placeholder="Search....">
+    <br><br>
+    <table>
+        <thead id="mytablehead">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="mytable">
+            <tr>
+                <td>a</td>
+                <td>aa</td>
+                <td>aa@gmail.com</td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td>bb</td>
+                <td>bb@gmail.com</td>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td>cc</td>
+                <td>cc@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <script>
+        $(document).ready(function(){
+            // $(selector).action();
+            $('a').click(function(){
+                $(this).css('color','red');
+            });
+            $('a').dblclick(function(){
+                $(this).css('font-size','50px');
+            });
+            $('#btnclick').click(function(){
+                $('h1').css('color','red');
+            });
+            $('#btnclick').dblclick(function(){
+                $('h1').css('font-size','50px');
+            });
+            $('#m-enter').mouseenter(function(){
+                $(this).css('color','red');
+            });
+            $('#m-enter').mouseleave(function(){
+                $(this).css('color','blue');
+            });
+            $('#btnmouse-down-up').mousedown(function(){
+                $('#text3').css('color','red');
+            });
+            $('#btnmouse-down-up').mouseup(function(){
+                $('#text3').css('color','blue');
+            });
+
+            // // $('#text4').hover(
+            // //     function(){$(this).css('color','red')},
+            // //     function(){$(this).css('color','blue')
+            // // });
+
+            // $('#show').click(function(){
+            //     $('#text5').show();
+            // });
+            // $('#hide').click(function(){
+            //     $('#text5').hide();
+            // });
+            // $('#toggle').click(function(){
+            //     $('#text5').toggle();
+            // });
+            // // $('#btnup').click(function(){
+            // //     $('#n1').slideUp(1000);
+            // // });
+            // // $('#btndw').click(function(){
+            // //     $('#n1').slideDown(1000);
+            // // });
+            // // $('#btntg').click(function(){
+            // //     $('#n1').slideToggle(1000);
+            // // });
+            // $('#btnleft').click(function(){
+            //     $('#text7').animate({left:'0px'},'slow');
+            // });
+            // $('#btnright').click(function(){
+            //     $('#text7').animate({left:'1000px'},'slow');
+            // });
+            // $('#btntog').click(function(){
+            //     $('#text7').animate({left:'1000px'},'slow'),
+            //     $('#text7').animate({left:'0px'},'slow');
+            // });
+            // filter data
+            $('#myInput').on('keyup',function(){
+                var value = $(this).val().toLowerCase();
+                $('#myTable tr').filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
+            });
+        });
+    </script>
+    </body>
+</html>
