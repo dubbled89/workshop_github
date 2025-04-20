@@ -1,0 +1,206 @@
+p {
+    font-size: 16 px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: #ff0000; 
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.linethrought{
+    text-decoration: line-through;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.underline-overline{
+    text-decoration: underline overline;
+}
+
+.solidline{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+.doubleline{
+    text-decoration: underline;
+    text-decoration-style: double;
+    
+}
+
+.dottedline{
+    text-decoration: underline;
+    text-decoration-style:dotted;
+}
+
+.dashedline{
+    text-decoration: underline;
+    text-decoration-style:dashed;
+}
+
+.wavyline{
+    text-decoration: underline;
+    text-decoration-style:wavy;
+}
+
+.tap{
+    text-indent: 30px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.text-space{
+    letter-spacing: 10px;
+}
+
+.text-reduce-space{
+    letter-spacing: -2px;
+}
+
+.wordspace1{
+    word-spacing: 20px;
+}
+
+.wordspace2{
+    word-spacing: -20px;
+}
+
+.textshadow{
+    text-shadow: 5px 5px 3px gray;
+}
+
+pre{
+    line-height: 5;
+}
+
+.box1 {
+    background-color: orange;
+    text-align: center;
+}
+
+
+.box2 {
+    background-color: orange;
+    text-align: left;
+}
+
+
+.box3 {
+    background-color: orange;
+    text-align: right;
+}
+
+.box4 {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 42px;
+}
+
+.box5 {
+    white-space: normal;
+}
+
+.horizontal{
+    writing-mode: horizontal-tb;
+}
+
+.vertical-lr{
+    writing-mode: vertical-lr;
+}
+
+.vertical-rl{
+    writing-mode: vertical-rl;
+    color: green;
+}
+
+.display-block{
+    display: block;
+}
+
+.display-inline{
+    display: inline;
+}
+
+
+.link{
+    color: red;
+ }
+
+ .link:visited{
+    color: aqua;
+ }
+
+ .link:hover {
+    color:blue;
+ }
+
+ .link:active{
+    color: green;
+ }
+
+ ul li{
+    list-style-type: upper-roman;
+ }
+
+/* background */
+body {
+    background-color: pink;
+    background-image: url(https://images.unsplash.com/photo-1742183635084-64c141301176?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;    
+}
+
+.border-test {
+    width: 100px;
+    height: 130px;
+    border: 4px solid white;
+    border-style:  dashed;
+    
+    /*แยกเส้น*/
+    border-collapse: separate;
+    border-right-color: red;
+    border-radius: 10px;
+}
+
+/* opacity ความโปร่งแสง */
+.border-test img {
+    width: 100%;
+    opacity:0.5;
+}
+
+.border-test img:hover {
+    opacity: 1;
+}
+
+/* table */
+table {
+    color:white;
+    table-layout:fixed;
+    width:100px;
+}
+
+table, td, th {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+
