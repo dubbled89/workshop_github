@@ -1,0 +1,50 @@
+.test1 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    text-align: center;
+    display: table;
+}
+
+.test1 a{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.test2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin-top: 10px;
+}
+
+.test3 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.test4 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.test5 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    padding-left: 50px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+
+
+
